@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <div class="logo">
+                <img src="logo.png" alt="logo" class="wp">
+                <h1 class="pal">Pals for Life</h1>
+            </div>
+
+            <div class="credit">
+                <p>Photo by <a href="https://unsplash.com/photos/a-sandwich-with-lettuce-and-tomato-on-a-wooden-plate-ztsG6f5ya1E">Olivie Strauss</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+            </div>
+        </div>
+
+        <div class="right">
+        <div class="item2 left">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p> 
+            <p>Sign up <em>now</em> to get started.</p>
+            <p class="remote-text">You <em>know</em> you want to.</p>
+        </div>
+
+        <form class="form left">
+            <p class="form-title">Let's do this!</p>
+            <p class="note">Fields marked with * are required.</p>
+            <div class="input first-name">
+            <label for="f-name">first name<span aria-label="required">*</span></label>
+            <input type="text" name="f-name" id="f-name" required>
+            </div>
+
+            <div class="input last-name">
+            <label for="l-name">last name<span aria-label="required">*</span></label>
+            <input type="text" name="l-name" id="l-name" required>
+            </div>
+            
+            <div class="input email-add">
+            <label for="email">email<span aria-label="required">*</span></label>
+            <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="input phone-number">
+            <label for="tel">phone number</label>
+            <input type="text" name="tel" id="tel">
+            </div>
+
+            <div class="input user-pw">
+            <label for="pw">password<span aria-label="required">*</span></label>
+            <input type="password" name="pw" id="pw" required>
+            </div> 
+
+            <div class="input user-confirm-pw">
+            <label for="confirm-pw">confirm password<span aria-label="required">*</span></label>
+            <input type="password" name="confirm-pw" id="confirm-pw" required>
+            </div>
+
+            <div class="left submit">
+                <button type="submit" onclick="passwordConfirmation()">Create Account</button>
+            </div>  
+        </form>
+
+        <div class="left login">
+            <p>Already have an account?</p><a href="https://opensea.io/">Log In</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

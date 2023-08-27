@@ -1,0 +1,150 @@
+:root{
+    --bg: rgba(0, 0, 0, 0.7);
+    --color: #ffffff;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.grid-container,
+.logo{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*left side*/
+
+.item1{
+    background-image: url(background.jpeg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+.logo{
+    height: auto;
+    background-color: var(--bg);
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 5px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: var(--color);
+}
+
+.wp{
+    height: 15vh;
+}
+
+.credit{
+    position: absolute;
+    bottom: 0;
+    padding-left: 5px;
+    color: black;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: var(--bg);
+}
+
+/*right side*/
+
+.right{
+    width: 60vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.left{
+    padding-left: 3vw;
+}
+
+.item2{
+    font-weight: 500;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+.remote-text{
+    margin: 30px 0;
+}
+
+/*form*/
+
+.form{
+    background-color: rgb(211, 211, 211, 0.4);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    opacity: 80%;
+}
+
+.form-title{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.note{
+    width: 100%;
+    font-size: 0.8rem;
+    color: var(--bg);
+}
+
+input{
+    border: 1px solid var(--bg);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button{
+    background-color: var(--bg);
+    color: var(--color);
+    border: 2px solid var(--color);
+    padding: 10px 40px;
+    margin: 40px 0;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: var(--color);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.login{
+    display: flex;
+    gap: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
